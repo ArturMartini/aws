@@ -12,7 +12,11 @@ This script send email for email registered in variable 'EMAILS' for example (EM
 This script stop all instances if not have Key="NoShutdown" and Value="Noshutdown"
 
 Example of configuration tasks in crontab
+<br>
 sudo crontab -e
+<br>
 add lines:
+<br>
 30 20 * * 1,2,3,4,5 /home/ec2-user/aws-scheduler/aws-ec2-alert-stop.sh >> /home/ec2-user/aws-scheduler/log/aws-ec2-alert-stop.log
+<br>
 0 21 * * 1,2,3,4,5 /home/ec2-user/aws-scheduler/aws-ec2-stop.sh >> /home/ec2-user/aws-scheduler/log/aws-ec2-stop.log
